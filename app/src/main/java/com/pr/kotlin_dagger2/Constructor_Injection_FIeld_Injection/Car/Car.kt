@@ -9,8 +9,11 @@ class Car @Inject constructor(
 ) {
     
     val TAG="PR7"
-    
+
+    @Inject
     fun drive(){
         Log.d(TAG, "drive: ")
+        println("prln drive... ")
+       // wheels.wheelsconnected()
     }
 }
