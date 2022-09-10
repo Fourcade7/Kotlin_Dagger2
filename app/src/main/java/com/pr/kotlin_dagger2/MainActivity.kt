@@ -2,23 +2,26 @@ package com.pr.kotlin_dagger2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.pr.kotlin_dagger2.Constructor_Injection_FIeld_Injection.Car.Car
-import com.pr.kotlin_dagger2.Constructor_Injection_FIeld_Injection.Car.Wheels
-import com.pr.kotlin_dagger2.Constructor_Injection_FIeld_Injection.Dagger.DaggerCarComponent
+import com.pr.kotlin_dagger2.Module_Provides.Google.Firebase
+import com.pr.kotlin_dagger2.Module_Provides.Google.Youtube
 import javax.inject.Inject
+
 
 class MainActivity : AppCompatActivity() {
 
+
     @Inject
-    lateinit var car: Car
+    lateinit var firebase: Firebase
     @Inject
-    lateinit var wheels: Wheels
+    lateinit var youtube: Youtube
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val component= DaggerCarComponent.create()
+        val component= DaggerComponent.create()
         component.inject(this)
+
+
 
 
 
