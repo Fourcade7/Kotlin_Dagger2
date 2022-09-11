@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         component.inject(this)
 
 
+        //bir narsa yozib
+
+
 
 
 
