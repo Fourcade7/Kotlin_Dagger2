@@ -6,7 +6,7 @@ class Youtube {
 
     val TAG="PR7"
     fun playvideo(){
-        Log.d(TAG, "playvideo: ...")
+        Log.d(TAG, "playvideo: ...:)")
     }
 
 }

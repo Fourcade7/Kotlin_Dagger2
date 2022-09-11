@@ -1,4 +1,6 @@
 package com.pr.kotlin_dagger2.Module_Provides.Car
 
-class Engine {
+import javax.inject.Inject
+
+class Engine @Inject constructor() {
 }

@@ -6,6 +6,6 @@ class Firebase {
 
     val TAG="PR7"
     fun connect(){
-        Log.d(TAG, "connect: ...")
+        Log.d(TAG, "connect: ...:)")
     }
 }
