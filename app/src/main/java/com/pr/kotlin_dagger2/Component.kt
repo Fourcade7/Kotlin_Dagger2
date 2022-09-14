@@ -1,16 +1,14 @@
 package com.pr.kotlin_dagger2
 
-import com.pr.kotlin_dagger2.Constructor_Injection_and_Field_Injection.Car
-import com.pr.kotlin_dagger2.MainActivity
-import com.pr.kotlin_dagger2.Module_Provides.Car.WheelsModule
-import com.pr.kotlin_dagger2.Module_Provides.Google.GoogleModule
+import com.pr.kotlin_dagger2.Binds.PetrolEngineModule
+import com.pr.kotlin_dagger2.Binds.WheelsModule
 import dagger.Component
 
 
-@Component(modules = [WheelsModule::class,GoogleModule::class])
+@Component(modules = [WheelsModule::class,PetrolEngineModule::class])
 interface Component {
 
-    fun getCar():Car
+    fun getCar():com.pr.kotlin_dagger2.Binds.Car
 
     fun inject(mainActivity: MainActivity)
 
