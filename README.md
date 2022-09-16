@@ -3,11 +3,18 @@
 //dagger
 
 
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-    id 'kotlin-kapt'
-}
+
+
+
+
+       plugins {
+        id 'com.android.application'
+        id 'kotlin-android'
+        id 'kotlin-kapt'
+        }
+
+
+
 
 
     implementation 'com.google.dagger:dagger:2.43.2'
